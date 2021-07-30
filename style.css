@@ -1,28 +1,30 @@
 /* Font definition */
+
 @font-face
 {
     font-family:'BallparkWeiner';
-    src: local('polices/ballpark.eot');
-    src: local('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         local('polices/ballpark.woff') format('woff'),
-         local('polices/ballpark.ttf') format('truetype'),
-         local('polices/ballpark.svg#BallparkWeiner') format('svg');
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
      font-weight: normal;
      font-style: normal;
 }
 @font-face
 {
     font-family: 'Dayrom';
-    src: local('polices/dayrom.eot');
-    src: local('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         local('polices/dayrom.woff') format('woff'),
-         local('polices/dayrom.ttf') format('truetype'),
-         local('polices/dayrom.svg#Dayrom') format('svg');
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Base defintion */
+
 body
 {
     background-image: url("images/fond_jaune.png");
@@ -31,8 +33,8 @@ body
 }
 #bloc_page
 {
-    width: 75%;
-    margin: auto;
+    max-width: 1500px;
+    margin: 1.5% 0 auto;
 }
 nav, section h1, footer h1
 {
@@ -42,3 +44,81 @@ nav, section h1, footer h1
 }
 
 /* Header */
+
+header
+{
+    background: url(images/separateur.png) repeat-x bottom content-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+
+/* Logo and title */
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    width: 165px;
+}
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 160px;
+    height: 60px;
+   
+}
+#logo img
+{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 40px;
+    margin-top: 65px;
+}
+header h2
+{
+    font-family: 'Dayrom', serif;
+    font-size: 1.2em;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/* Menu */
+
+nav
+{
+    padding-right: 3%;
+    padding-top: 2%;
+}
+ul
+{
+    display: flex;
+    list-style-type: none;
+}
+ul li a, ul li a:visited
+{
+    display: block;
+    padding: 0px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+ul li a:hover
+{
+    color: #780305;
+    text-decoration: underline 2px #780305;
+}
+
+/* Banner */
+
