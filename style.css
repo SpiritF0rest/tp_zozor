@@ -106,7 +106,7 @@ ul
     display: flex;
     list-style-type: none;
 }
-ul li a, ul li a:visited
+nav li a
 {
     display: block;
     padding: 0 15px;
@@ -114,7 +114,7 @@ ul li a, ul li a:visited
     text-decoration: none;
     color: #2b2b2b;
 }
-ul li a:hover
+nav li a:hover
 {
     color: #780305;
     text-decoration: underline 2px #780305;
@@ -257,4 +257,63 @@ aside h1
 
 /* Footer */
 
+footer
+{
+    display: flex;
+    background: url(images/ico_top.png) no-repeat top center, url(images/separateur.png) repeat-x top, url(images/ombre.png) repeat-x top ;
+    padding-top: 25px;
+    margin: 0px 35px
+}
+footer p, footer ul
+{
+    font-size: 1em;
+}
+footer h1
+{
+    font-size: 1.3em;
+}
+
 /* Left div */
+
+#tweet
+{
+    width: 34.7%;
+}
+
+/* Mid div */
+
+#photos
+{
+    width: 29.2%;
+}
+#photos img
+{
+    border: 1px solid #2b2b2b;
+    margin-right: 5px;
+}
+
+/* Right div */
+
+#amis
+{
+    width: 36.1%;
+}
+#liste_amis
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#amis ul
+{
+    list-style-image: url(images/ico_liensexterne.png) ;
+    display: block;
+    padding-left: 2px;
+    margin-top: 0;
+    margin-right: 70px;
+    margin-left: 10px;
+}
+#amis a
+{
+    text-decoration: none;
+    color: #780305;
+}
