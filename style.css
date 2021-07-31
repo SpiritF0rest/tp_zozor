@@ -34,7 +34,7 @@ body
 #bloc_page
 {
     max-width: 1500px;
-    margin: 20px 0 auto;
+    margin: 20px 10px auto;
 }
 nav, section h1, footer h1
 {
@@ -168,3 +168,93 @@ ul li a:hover
 /* Content */
 
 /* Article */
+
+section
+{
+    display: flex;
+    margin: 0px 35px;
+}
+article, aside
+{
+    text-align: justify;
+}
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+#epingle
+{
+    vertical-align: middle;
+    margin-top: 5px;
+    padding: 0px 8px 25px 0px;
+}
+article h1
+{
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+article p
+{
+    font-size: 1em;
+    margin-top: 0;
+}
+#curiculum, .curiculum a:visited
+{
+    color: #2b2b2b;
+    text-decoration: none;
+}
+#curiculum:hover
+{
+    color: #780305;
+    text-decoration: underline 1px #780305;
+}
+
+/* Aside */
+
+aside
+{
+    position: relative;
+    flex: 1.1;
+    background: #6f6a62;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #2b2b2b;
+    padding: 8px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+#bulle
+{
+    position: absolute;
+    top: 180px;
+    right: 322px;
+}
+aside h1
+{
+    font-size: 1.5em;
+    text-align: left;
+    padding-top: 8px;
+    margin-top: 0;
+}
+#zozor
+{
+    text-align: center;
+}
+#zozor img
+{
+    border: 1px #2b2b2b solid;
+    margin-bottom: 5px;
+}
+#reseaux
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+/* Footer */
+
+/* Left div */
