@@ -30,11 +30,14 @@ body
     background-image: url("images/fond_jaune.png");
     font-family: 'Trebuchet MS',Arial, Verdana, sans-serif;
     color: #2b2b2b;
+    align-items: center;
+    width: 100%;
 }
 #bloc_page
 {
-    max-width: 1500px;
-    margin: 20px 10px auto;
+    max-width: 1250px;
+    margin: auto;
+    padding-top: 10px;
 }
 nav, section h1, footer h1
 {
@@ -316,4 +319,69 @@ footer h1
 {
     text-decoration: none;
     color: #780305;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1250px)
+{
+#bulle
+{
+    display: none;
+}
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    nav
+    {
+        text-align: left;
+        padding-bottom: 55px;
+    }
+    nav ul 
+    {
+        flex-direction: column;
+    }
+    nav li 
+    {
+        padding-left: 4px;
+    }
+    nav li a
+    {
+        font-size: 1.2em;
+    }
+    nav a:hover 
+    {
+        border-bottom: 0;
+    }
+
+    #banniere
+    {
+        display: none;
+    }
+
+    section 
+    {
+        flex-direction: column;
+    }
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    #bulle
+    {
+        display: none;
+    } 
+    #zozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
 }
